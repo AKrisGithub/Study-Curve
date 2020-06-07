@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="../CSS/clases copy.css">
+    <link rel="shortcut icon" type="image/svg" href="../images/sc.svg">
+    <title>Science</title>
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <div id="avatar">
+
+            </div>
+            <figcaption>Study Curve</figcaption>
+        </figure>
+        <img src="../Images/Group 1.svg">
+        <nav>
+            <ul id="ul">
+                <li><a href="../Home.html"><i class="fas fa-home"></i><b> Home</b></a></li>
+                <li><a href="../HTML/Clases.html"><i class="fas fa-book-open"></i></i><b> Subject</b></a></li>
+                <li id="li"><a href="../HTML/Calculator.html" id="href"><i class="fas fa-calculator"></i><b>
+                            Calculator</b></a>
+                <li><a href="../HTML/Feedback.html"><i class="far fa-comments"></i><b> Feedback</b></a></li>
+
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>Science</h1>
+        <br>
+        <div id="content">
+            <h2 id="a"><a href="./science-5.html">Science Grade 5</a></h2>
+            <hr>
+            <h2 id="b"><a href="./science-6.html">Science Grade 6</a></h2>
+            <hr>
+            <h2 id="c"><a href="./science-7.html">Science Grade 7</a></h2>
+            <hr>
+            <h2 id="d"><a href="./science-8.html">Science Grade 8</a></h2>
+            <hr>
+            <h2 id="e"><a href="./science-9.html">Science Grade 9</a></h2>
+
+        </div>
+    </main>
+
+
+    <script>
+        (function () {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+
+            menulink.addEventListener('click', function (e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+</body>
+
+</html>

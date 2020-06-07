@@ -1,0 +1,399 @@
+/* Css File For All The Subjects*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body,
+html {
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: rgb(44, 44, 44);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+aside {
+    color: #fff;
+    display: grid;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+img {
+    width: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+nav {
+    background: #fff;
+}
+
+.active {
+    position: absolute;
+    display: block;
+    background: #fff;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: bold;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgb(36, 35, 35);
+    color: #FFF;
+}
+
+main {
+    background: #fff;
+    padding: 1em 1.4em;
+    height: 600px;
+    width: 900px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+
+.cta {
+    display: block;
+    color: #fff;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+button {
+    padding: 15px;
+    border: 0.1rem solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: #000000;
+    font-size: 14px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#sub {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#subj {
+    text-decoration: none;
+    color: black;
+}
+
+#subj:hover {
+    font-size: 25px;
+}
+
+#content {
+    float: left;
+    border: 2px solid black;
+    height: 129px;
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+main {
+    width: auto;
+    height: 560px;
+}
+
+#a:hover {
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#b:hover {
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#c:hover {
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#d:hover {
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#e:hover {
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#f:hover {
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2:hover {
+    font-size: 26px;
+    padding: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 23px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 50px;
+    }
+
+    img {
+        display: none;
+    }
+
+    aside {
+        background: rgb(0, 0, 0);
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+    main {
+        padding: 4em;
+        background: white url('#') no-repeat bottom right;
+        background-size: 70%;
+    }
+
+    #content {
+        float: left;
+        border: 2px solid black;
+        height: 180px;
+        width: 500px;
+        margin-right: 700px;
+    }
+
+    #avatar {
+        border-radius: 50%;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto;
+    }
+
+    figcaption {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+    }
+
+    #ul {
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    #href {
+        font-weight: bold;
+    }
+
+    #href:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-weight: bold;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+    h2:hover {
+        font-size: 34px;
+        padding: 0px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 29px;
+    }
+
+    nav {
+        background: none;
+    }
+
+
+    .cta {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    h1 {
+        font-size: 3em;
+        background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 3s ease-in-out infinite;
+        margin-top: 0em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    hr {
+        background: green;
+    }
+
+    #sub {
+        list-style-type: none;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 1px;
+    }
+
+    main {
+        height: auto;
+        width: 915px;
+    }
+
+    #subj {
+        text-decoration: none;
+        color: black;
+    }
+
+    #subj:hover {
+        font-size: 30px;
+        background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(107, 107, 107));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    button {
+        padding: 15px;
+        border: 0.1rem solid black;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        color: #000000;
+        font-size: 14px;
+        float: left;
+        width: 200px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: rgb(107, 107, 107);
+        color: White;
+    }
+
+    .inner {
+        background: rgb(9, 201, 153);
+        padding: 1em;
+        border-radius: 10px;
+        width: 250px;
+        clip-path: circle(10% at 90% 20%);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            clip-path: circle(75%);
+            background: #00B6FF;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+        }
+
+        p {
+            color: white;
+            font-size: .8rem;
+        }
+
+        span {
+            float: right;
+            color: white;
+            font-weight: bold;
+            transition: color .5s;
+            position: relative;
+            margin-right: 4%;
+        }
+
+        &:hover span {
+            color: rgba(255, 255, 255, 0)
+        }
+
+    }

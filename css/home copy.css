@@ -1,0 +1,568 @@
+/* The Css File For The Home Page As Well As The Home Animation*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body,
+html {
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: rgb(44, 44, 44);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+aside {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+img {
+    width: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+nav {
+    background: #fff;
+}
+
+.active {
+    background-color: white;
+    position: absolute;
+    display: block;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+}
+
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    background: white;
+    padding: 0;
+
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: 1.5em 3em;
+    background-color: rgb(36, 35, 35);
+    color: #FFF;
+}
+
+main {
+    background: #fff;
+    padding: 1em 1.4em;
+}
+
+h1 {
+    margin: 0;
+}
+
+#firebaseui-auth-container div {
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+
+#firebaseui-auth-container h2 {
+    color: black;
+    font-weight: bold;
+}
+
+#firebaseui-auth-container button {
+    border-radius: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#firebaseui-auth-container button:hover {
+    background-color: black;
+    color: white;
+}
+
+#firebaseui-auth-container input {
+    width: 300px;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding: 9px;
+}
+
+x p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.cta {
+    display: block;
+    color: #fff;
+    background: #0E7FFF;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+#heading {
+    font-size: 35px;
+    text-align: left;
+}
+
+.PPX {
+    width: 600px;
+}
+
+.para {
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    padding: 15px;
+    border: 0.1rem solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: #000000;
+    font-size: 14px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+main {
+    height: 500px;
+    width: 325px;
+}
+
+#heading {
+    font-size: 21px;
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(107, 107, 107));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.PPX {
+    width: 600px;
+}
+
+.para {
+    font-size: 15px;
+}
+
+@-webkit-keyframes showTopText {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    40%,
+    60% {
+        -webkit-transform: translate3d(0, 50%, 0);
+        transform: translate3d(0, 50%, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showTopText {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    40%,
+    60% {
+        -webkit-transform: translate3d(0, 50%, 0);
+        transform: translate3d(0, 50%, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes showBottomText {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes showBottomText {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animated-title {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vmin;
+    font-weight: bold;
+    left: 125px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-25%, -50%);
+    transform: translate(-25%, -50%);
+    width: 100vmin;
+}
+
+.animated-title>div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.animated-title>div div {
+    font-size: 60px;
+    padding: 2vmin 0;
+    position: absolute;
+}
+
+.animated-title>div div span {
+    display: block;
+}
+
+.animated-title>div.text-top {
+    border-bottom: 1vmin solid #525252;
+    top: 0;
+    width: 300px;
+}
+
+.animated-title>div.text-top div {
+    -webkit-animation: showTopText 1s;
+    animation: showTopText 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+}
+
+.animated-title>div.text-top div span:first-child {
+    color: #000000;
+}
+
+.animated-title>div.text-bottom {
+    bottom: 0;
+}
+
+.animated-title>div.text-bottom div {
+    -webkit-animation: showBottomText 0.5s;
+    animation: showBottomText 0.5s;
+    -webkit-animation-delay: 1.75s;
+    animation-delay: 1.75s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    top: 0;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+}
+
+
+@media only screen and (min-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+        box-shadow: #fff;
+    }
+
+    img {
+        display: none;
+    }
+
+    aside {
+        background: rgb(0, 0, 0);
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+
+    main {
+        padding: 4em;
+        background: white url('../images/bg.svg') no-repeat bottom right;
+        background-size: 70%;
+    }
+
+    #avatar {
+        border-radius: 50%;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto;
+        border: 5px;
+        border-color: #000;
+    }
+
+    @-webkit-keyframes showTopText {
+        0% {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        40%,
+        60% {
+            -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+        }
+
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes showTopText {
+        0% {
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        40%,
+        60% {
+            -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
+        }
+
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @-webkit-keyframes showBottomText {
+        0% {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes showBottomText {
+        0% {
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .animated-title {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        height: 100vmin;
+        font-weight: bold;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-25%, -50%);
+        transform: translate(-25%, -50%);
+        width: 100vmin;
+    }
+
+    .animated-title>div {
+        height: 50%;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+    }
+
+    .animated-title>div div {
+        font-size: 13vmin;
+        padding: 2vmin 0;
+        position: absolute;
+    }
+
+    .animated-title>div div span {
+        display: block;
+    }
+
+    .animated-title>div.text-top {
+        border-bottom: 1vmin solid #525252;
+        top: 0;
+        width: 500px;
+    }
+
+    .animated-title>div.text-top div {
+        -webkit-animation: showTopText 1s;
+        animation: showTopText 1s;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        bottom: 0;
+        -webkit-transform: translate(0, 100%);
+        transform: translate(0, 100%);
+    }
+
+    .animated-title>div.text-top div span:first-child {
+        color: #000000;
+    }
+
+    .animated-title>div.text-bottom {
+        bottom: 0;
+    }
+
+    .animated-title>div.text-bottom div {
+        -webkit-animation: showBottomText 0.5s;
+        animation: showBottomText 0.5s;
+        -webkit-animation-delay: 1.75s;
+        animation-delay: 1.75s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        top: 0;
+        -webkit-transform: translate(0, -100%);
+        transform: translate(0, -100%);
+    }
+
+    figcaption {
+        text-align: center;
+        color: #FFF;
+        font-size: 16px;
+    }
+
+    ul {
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    ul li a:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-weight: bold;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+    nav {
+        background: none;
+    }
+
+    .cta {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: 0em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    Invisible {
+        font-size: 4px;
+    }
+
+    #heading {
+        font-size: 3em;
+        background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 3s ease-in-out infinite;
+        margin-top: 0em;
+    }
+
+
+
+    main {
+        height: 480px;
+        width: 915px;
+    }
+
+    button {
+        padding: 15px;
+        border: 0.1rem solid black;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        color: #000000;
+        font-size: 14px;
+        width: 200px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: rgb(107, 107, 107);
+        color: White;
+    }
+
+    #href {
+        font-weight: bold;
+    }
+
+    wasd {
+        font-size: unset;
+        quotes: 10px;
+    }
+}

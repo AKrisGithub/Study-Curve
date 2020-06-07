@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/clases.css">
+    <link rel="shortcut icon" type="image/svg" href="../images/sc.svg">
+    <title>Lesson Selector</title>
+    <style>
+        #content {
+            float: left;
+            border: 2px solid black;
+            height: 450px;
+            width: 320px;
+        }
+
+        main {
+            width: auto;
+            height: 560px;
+        }
+
+        #a:hover {
+            background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #b:hover {
+            background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #c:hover {
+            background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #d:hover {
+            background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #e:hover {
+            background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #f:hover {
+            background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(105, 105, 105));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            h2:hover {
+                font-size: 34px;
+                padding: 0px;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 29px;
+            }
+
+            #content {
+                float: left;
+                border: 2px solid black;
+                height: 525px;
+                width: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <div id="avatar">
+
+            </div>
+            <figcaption>Study Curve</figcaption>
+        </figure>
+        <img src="../Images/Group 1.svg">
+        <nav>
+            <ul id="ul">
+                <li><a href="../Home.html"><i class="fas fa-home"></i><b> Home</b></a></li>
+                <li><a href="../HTML/Clases.html"><i class="fas fa-book-open"></i></i><b> Subject</b></a></li>
+                <li id="li"><a href="../HTML/Calculator.html" id="href"><i class="fas fa-calculator"></i><b>
+                            Calculator</b></a>
+                </li>
+                <li><a href="../HTML/Feedback.html"><i class="far fa-comments"></i><b> Feedback</b></a></li>
+
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div id="content">
+            <h2 id="a"><a href="../Maths/maths.html"><i class="fas fa-calculator"></i> Maths</a></h2>
+            <hr>
+            <h2 id="b"><a href="../Science/science.html"><i class="fas fa-flask"></i> Science</a></h2>
+            <hr>
+            <h2 id="c"><a href="../Social Science/social-studies.html"><i class="fas fa-landmark"></i> Social
+                    Science</a></h2>
+            <hr>
+            <h2 id="d"><a href="../Hindi/hindi.html"><i class="fas fa-om"></i> Hindi</a></h2>
+            <hr>
+            <h2 id="e"><a href="../French/french.html"><i class="fas fa-ad"></i> French</a></h2>
+            <hr>
+            <h2 id="f"><a href="../English/english.html"><i class="fas fa-book"></i> English</a></h2>
+
+        </div>
+        <script>
+            (function () {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('img');
+
+                menulink.addEventListener('click', function (e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/svg" href="../images/sc.svg">
+    <script>
+        function insert(num) {
+            document.form.textview.value = document.form.textview.value + num;
+        }
+
+        function equal() {
+            var exp = document.form.textview.value;
+            if (exp) {
+                document.form.textview.value = eval(exp)
+            }
+        }
+
+        function clean() {
+            document.form.textview.value = "";
+        }
+
+        function back() {
+            var exp = document.form.textview.value;
+            document.form.textview.value = exp.substring(0, exp.lenghth - 1);
+        }
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .button {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 2px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            border: 3px solid black;
+            font-weight: bold;
+            border-radius: 50px;
+            color: black;
+            background-color: white;
+        }
+
+        .equal {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 2px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            border: 3px solid black;
+            font-weight: bold;
+            border-radius: 25px;
+            color: black;
+            background-color: white;
+        }
+
+        .textview {
+            width: 205px;
+            height: 25px;
+            margin: 5px;
+            font-size: 20px;
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            border-radius: 15px;
+            color: black;
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        .main {
+            position: absolute;
+            top: 55%;
+            left: 36%;
+            transform: translateX(-30%)translateY(-35%);
+            padding: 7px;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+
+        }
+
+        @media only screen and (min-width: 900px) {
+            .main {
+                position: absolute;
+                top: 55%;
+                left: 36%;
+                transform: translateX(-50%)translateY(-50%);
+                padding: 7px;
+                border: 3px solid black;
+                border-radius: 15px;
+            }
+
+            .button:hover {
+                background-color: rgb(46, 46, 46);
+                color: white;
+                border: 3px solid black;
+            }
+
+            .equal:hover {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                margin: 2px;
+                cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+                border: 3px solid black;
+                font-weight: bold;
+                border-radius: 25px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(73, 73, 73);
+            }
+
+            h1 {
+                text-align: left;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/calc.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Study Curve | Calculator</title>
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <div id="avatar">
+
+            </div>
+            <figcaption>Study Curve</figcaption>
+        </figure>
+        <img src="../Images/Group 1.svg">
+        <nav>
+            <ul>
+                <li><a href="../Home.html"><i class="fas fa-home"></i><b> Home</b></a></li>
+                <li><a href="../HTML/Clases.html"><i class="fas fa-book-open"></i></i><b> Subject</b></a></li>
+                <li id="li"><a href="../HTML/Calculator.html" id="href"><i class="fas fa-calculator"></i><b>
+                            Calculator</b></a>
+                <li><a href="../HTML/Feedback.html"><i class="far fa-comments"></i><b> Feedback</b></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>Calculator</h1>
+        <div class="main">
+            <form name="form">
+                <input class="textview" name="textview">
+            </form>
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="C" onclick="clean()"></td>
+                    <td><input class="button" type="button" value="<" onclick="back()"></td>
+                    <td><input class="button" type="button" value="÷" onclick="insert('/')"></td>
+                    <td><input class="button" type="button" value="×" onclick="insert('*')"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+                    <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+                    <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+                    <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+                    <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+                    <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+                    <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+                    <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+                    <td><input class=" button" type="button" value="3" onclick="insert(3)"></td>
+                    <td rowspan="5"><input class="equal" style="height: 105px;" type="button" value="="
+                            onclick="equal()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class=" button" style="width: 107px;" type="button" value="0"
+                            onclick="insert(0)"></td>
+                    <td><input class=" button" type="button" value="." onclick="insert('.')"></td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <script>
+        (function () {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+
+            menulink.addEventListener('click', function (e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+    <script>
+        const cookieContainer = document.querySelector(".cookie-container");
+        const cookieButton = document.querySelector(".cookie-btn");
+
+        cookieButton.addEventListener("click", () => {
+            cookieContainer.classList.remove("active");
+            localStorage.setItem("cookieBannerDisplayed", "true");
+        });
+
+        setTimeout(() => {
+            if (!localStorage.getItem("cookieBannerDisplayed")) {
+                cookieContainer.classList.add("active");
+            }
+        }, 2000);
+    </script>
+</body>
+
+</html>
