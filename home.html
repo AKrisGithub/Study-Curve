@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/svg" href="./images/sc.svg">
+    <link rel="stylesheet" href="../CSS/Home copy.css">
+    <script data-ad-client="ca-pub-4058861456918346" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <meta name="yandex-verification" content="a47ed02017ab8d29" />
+    <style>
+        #LogOut {
+            margin-top: 420px;
+            margin-left: 50px;
+        }
+
+        main {
+            width: auto;
+            height: 450px;
+        }
+
+        body {
+            width: auto;
+            height: auto;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        @media only screen and (min-width: 900px) {
+            #LogOut {
+                margin-top: 470px;
+                margin-left: 759px;
+            }
+
+            main {
+                height: 480px;
+                width: 915px;
+            }
+        }
+    </style>
+    <title>Study Curve | Home</title>
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <div id="avatar">
+            </div>
+            <figcaption>Study Curve</figcaption>
+        </figure>
+        <img src="../Images/Group 1.svg">
+        <nav>
+            <ul class="active">
+                <li><a href="../Home.html"><i class="fas fa-home"></i><b> Home</b></a></li>
+                <li><a href="../HTML/Clases.html"><i class="fas fa-book-open"></i></i><b> Subject</b></a></li>
+                <li id="li"><a href="../HTML/Calculator.html" id="href"><i class="fas fa-calculator"></i><b>
+                            Calculator</b></a>
+                </li>
+                <li><a href="../HTML/Feedback.html"><i class="far fa-comments"></i><b> Feedback</b></a></li>
+                <li><a onclick="mainApp.logOut()"><i class="fas fa-sign-out-alt"></i><b> Log Out</b></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="animated-title">
+            <div class="text-top">
+                <div>
+                    <span>Welcome</span>
+                    <span>To Study</span>
+                </div>
+            </div>
+            <div class="text-bottom">
+                <div>Curve !</div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        (function () {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+
+            menulink.addEventListener('click', function (e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+    <script src="./Firebase.js"></script>
+    <script src="./Main.js"></script>
+</body>
+
+</html>

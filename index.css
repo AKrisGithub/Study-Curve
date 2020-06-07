@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body,
+html {
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background: rgb(44, 44, 44);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    background: #fff;
+    padding: 1em 1.4em;
+}
+
+main {
+    height: auto;
+    width: auto;
+}
+
+#heading {
+    font-size: 35px;
+    background: -webkit-linear-gradient(90deg, rgb(0, 196, 0), rgb(201, 223, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 900px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+        box-shadow: #fff;
+    }
+
+    img {
+        display: none;
+    }
+
+    aside {
+        background: rgb(0, 0, 0);
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+
+    main {
+        padding: 4em;
+    }
+
+    #avatar {
+        border-radius: 50%;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        margin: 2em auto 1em auto;
+        border: 5px;
+        border-color: #000;
+    }
+
+    figcaption {
+        text-align: center;
+        color: #FFF;
+        font-size: 16px;
+    }
+
+    ul {
+        display: block;
+        margin-top: 2em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    ul li a:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-weight: bold;
+        border: solid 2px rgb(0, 0, 0);
+    }
+
+    nav {
+        background: none;
+    }
+
+    .cta {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    main {
+        padding: 4em;
+        background: url('#') no-repeat bottom right;
+        background-color: rgb(255, 255, 255);
+        background-size: 55%;
+    }
+
+
+    h1 {
+        font-size: 3em;
+        margin-top: 30px;
+
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    Invisible {
+        font-size: 4px;
+    }
+
+    #para {
+        font-size: 15px;
+    }
+
+    main {
+        height: auto;
+        width: 1175px;
+    }
+
+    #href {
+        font-weight: bold;
+    }
+
+    wasd {
+        font-size: unset;
+        quotes: 10px;
+    }
+
+    button {
+        border-radius: 50px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+}

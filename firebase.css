@@ -1,0 +1,174 @@
+.firebaseui-idp-icon {
+    background: url('https://pngtree.com/freepng/white-google-plus-icon-png_3562067.html');
+}
+
+.firebase form {
+    border-radius: 15px;
+    width: auto;
+    color: black;
+    font-weight: 500;
+
+}
+
+.firebase h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.firebase button {
+    border-radius: 50px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.firebase .firebaseui-country-selector {
+    background: white;
+    color: black;
+    border-radius: 0;
+}
+
+.firebase .firebaseui-id-email {
+    width: 300px;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding: 9px;
+}
+
+
+.firebase .firebaseui-id-name {
+    width: 300px;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding: 9px;
+}
+
+.firebase ::after {
+    background-color: rgb(92, 89, 89);
+}
+
+.firebase button {
+    background-color: black;
+    color: white;
+}
+
+.firebase button:hover {
+    background-color: black;
+    color: white;
+}
+
+.firebase .firebaseui-id-new-password {
+    width: 300px;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding: 9px;
+}
+
+.firebase label {
+    font-weight: bold;
+    color: black;
+}
+
+
+.firebase .firebaseui-idp-google {
+    border-radius: 70px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.firebase .firebaseui-idp-google:onclick {
+    background-color: white;
+}
+
+.firebase .firebaseui-idp-facebook {
+    border-radius: 70px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.firebase .firebaseui-idp-password {
+    border-radius: 70px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.firebaseui .firebaseui-idp-phone {
+    border-radius: 70px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.firebase div {
+    border-radius: 15px;
+    width: auto;
+    color: black;
+    font-weight: 500;
+}
+
+.firebase .firebaseui-idp-google:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.firebase .firebaseui-idp-facebook:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.firebase .firebaseui-idp-password:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.firebase .firebaseui-idp-phone:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.firebase .firebaseui-card-header {
+    border-radius: 0px;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .firebase .firebaseui-idp-google:hover {
+        background-color: white;
+    }
+
+    .firebase .firebaseui-idp-facebook:hover {
+        background-color: rgb(65, 89, 224);
+    }
+
+    .firebase .firebaseui-idp-password:hover {
+        background-color: rgb(206, 73, 73);
+    }
+
+    .firebase .firebaseui-idp-phone:hover {
+        background-color: rgb(62, 172, 81);
+    }
+
+}
